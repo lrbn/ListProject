@@ -15,6 +15,17 @@ function renderList(thing) {
   return list;
 }
 
+// TODO
+// Add a promote button to every list item that changes the apperance of that
+// item when clicked.
+function changeItemBackgroundColor(ev) {
+  ev.preventDefault();
+  console.log("Background changed");
+}
+
+// TODO
+// Add a delete button to every list item that removes the name from the list when clicked.
+
 function handleSubmit(ev) {
   ev.preventDefault();
   const f = ev.target;
