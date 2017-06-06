@@ -22,6 +22,7 @@ function handleSubmit(ev) {
   const thing = {
     Name: f.thing.value,
   };
+  // This will add the ul to the top.
   details.insertBefore(renderList(thing), details.firstChild);
   thingForm.reset(); // clears input field for more entries
 }
