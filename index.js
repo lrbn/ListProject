@@ -1,8 +1,8 @@
 const thingForm = document.querySelector('form#thingForm');
 
-function renderListItem(fieldName) {
+function renderListItem (fieldName) {
   const li = document.createElement('li');
-  li.innerHTML = `${fieldName}`;
+  li.innerHTML = `${fieldName}`;;
   return li;
 }
 
@@ -15,17 +15,6 @@ function renderList(thing) {
   return list;
 }
 
-// TODO
-// Add a promote button to every list item that changes the apperance of that
-// item when clicked.
-function changeItemBackgroundColor(ev) {
-  ev.preventDefault();
-  console.log("Background changed");
-}
-
-// TODO
-// Add a delete button to every list item that removes the name from the list when clicked.
-
 function handleSubmit(ev) {
   ev.preventDefault();
   const f = ev.target;
@@ -33,9 +22,12 @@ function handleSubmit(ev) {
   const thing = {
     Name: f.thing.value,
   };
-  // This will add the ul to the top.
-  details.insertBefore(renderList(thing), details.firstChild);
-  thingForm.reset(); // clears input field for more entries
+  if (f.thing.value !== "") { // prevent empty entries
+    details.insertBefore(renderList(thing), details.firstChild);
+  } else {
+    alert("Please enter a thing.");
+  }
+  thingForm.reset();
 }
 
 thingForm.addEventListener('submit', handleSubmit);

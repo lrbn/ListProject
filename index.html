@@ -6,22 +6,18 @@
     <title>List Project</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
     <link rel="stylesheet" href="index.css">
   </head>
-  <body>
-    <h1>Enter a thing to a list!<h1>
+  <body background="assets/space.jpg">
+    <h1>List Deluxe</h1>
     <section>
-      <div class="special">
-        <form id="thingForm">
+      <div class="entry">
+        <form id="thingForm" autocomplete = "off">
           <p>
-            <label for="thing">Thing to list:</label>
-            <input type="text" name="thing">
+            <input  class="thingEntry"  id= "entryinput" type="text" name="thing">
+            <button class="listIt" type="submit">List</button>
           </p>
-          <p>
-            <button type="submit">List it!</button>
-          </p>
-        </form>
+        <form>
       </div>
       <div id="details">
       </div>
@@ -29,3 +25,5 @@
     <script src="index.js"></script>
   </body>
 </html>
+        <!--<button class="promote" type="button">+</button>
+        <button class="delete" type="button">-</button>-->

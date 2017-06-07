@@ -1,50 +1,42 @@
-body {
-  padding: 1rem 4rem;
+h1 {
+  color: powderblue;
+  text-align: center;
 }
 
-section > div {
-  width: 80%;
-  margin: 1rem auto;
+div {
+  text-align: center;
 }
 
-form {
-  margin-top: 50px;
+input.thingEntry {
+  font-size: 16px;
+  text-align: left;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 4px;
 }
 
-dl {
-  padding: 15px 10px;
-}
-
-dl > li {
-  list-style: none;
-}
-
-dt, dd {
+button {
+  border: none;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
   display: inline-block;
-  vertical-align: top;
-  width: 48%;
+  font-size: 16px;
+  padding: 12px 28px;
 }
 
-dl:nth-of-type(even) {
-  background-color: WhiteSmoke;
+button.listIt {
+  background-color: orange;
 }
 
-@media (min-width: 700px) {
-  section > div {
-    width: 60%;
-  }
+button.promote {
+  background-color: green;
 }
 
-@media (min-width: 900px) {
-  section > div {
-    float: left;
-    margin: 20px 5%;
-    width: 40%;
-  }
+button.delete {
+  background-color: red;
+}
 
-  section::after {
-    clear: both;
-    content: "";
-    display: table;
-  }
+li {
+  background-color: silver;
 }
