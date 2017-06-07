@@ -1,9 +1,11 @@
 const thingForm = document.querySelector('form#thingForm');
 
 function renderListItem (fieldName) {
-  const li = document.createElement('li');
-  li.innerHTML = `${fieldName}`;;
-  return li;
+  const p = document.createElement('p');
+  p.className = 'para';
+  p.innerHTML = `${fieldName}`;
+  // li.innerHTML = `${fieldName}`;
+  return p;
 }
 
 function renderList(thing) {
